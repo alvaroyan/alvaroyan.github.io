@@ -101,6 +101,24 @@ sections:
   #     # Reduce spacing
   #     spacing:
   #       padding: [0, 0, 0, 0]
+
+  - block: cta-button-list
+
+    # content: 
+    #   title: CV
+    #   button:
+    #     text: CV
+    #     url: uploads/resume.pdf
+
+    content:
+        # Need a custom icon?
+        # Add an SVG image to the `assets/media/icons/` folder and reference it in the `icon` field below
+        title: CV
+        buttons:
+          - text: CV
+            # icon: academicons/arxiv
+            url: uploads/resume.pdf
+
   - block: cta-card
     demo: true # Only display this section in the Hugo Blox Builder demo site
     content:
