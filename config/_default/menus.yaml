@@ -7,9 +7,11 @@ main:
   - name: About me
     url: /
     weight: 10
-  - name: Papers
-    url: /#papers
-#     weight: 11
+  # - name: Contact
+  #   url: /#contact
+  #    weight: 11
+
+
 #   - name: Talks
 #     url: /#talks
 #     weight: 12
