@@ -183,6 +183,6 @@ skills:
 
 ## About Me
 
-I am currently a second-year PhD student in Quantum Cryptography at LIP6, Sorbonne Université in Paris, France. I am also part of the Marie Curie Doctoral Network Quantum Safe Internet. 
+I am currently a second-year PhD student in Quantum Cryptography at [LIP6](https://qi.lip6.fr/), Sorbonne Université in Paris, France. I am also part of the [Marie Curie Doctoral Network Quantum Safe Internet](https://quantum-safeinternet.com/). 
       
 My research interests span Quantum Information Theory, Computer Science, and Mathematical Physics. I work at the intersection of Quantum Cryptography and Complexity Theory, exploring the theoretical limits of computationally based quantum cryptography. Additionally, I collaborate with experimental researchers to enable the implementation of novel quantum-safe protocols, integrating techniques from post-quantum cryptography and quantum information.
