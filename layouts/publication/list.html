@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="{{ site.Language.LanguageCode | default "en" }}">
+<head>
+  {{ partial "ay/head.html" . }}
+</head>
+<body class="academic-site">
+  {{ partial "ay/nav.html" . }}
+  <main id="main">
+    <header class="archive-hero">
+      <div class="shell">
+        <p class="kicker">Research record</p>
+        <h1>Publications</h1>
+        <p>Journal articles and preprints in quantum information theory, computational complexity, and quantum cryptography.</p>
+      </div>
+    </header>
+    <section class="band" aria-label="Publication list">
+      <div class="shell paper-list">
+        {{ range .RegularPagesRecursive.ByDate.Reverse }}{{ partial "ay/paper-row.html" . }}{{ end }}
+      </div>
+    </section>
+  </main>
+  {{ partial "ay/footer.html" . }}
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="{{ site.Language.LanguageCode | default "en" }}">
+<head>
+  {{ partial "ay/head.html" . }}
+</head>
+<body class="academic-site">
+  {{ partial "ay/nav.html" . }}
+  <main id="main">
+    <header class="archive-hero">
+      <div class="shell">
+        <p class="kicker">Álvaro Yángüez</p>
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+      </div>
+    </header>
+    <section class="band">
+      <article class="shell prose generic-content">{{ .Content }}</article>
+    </section>
+  </main>
+  {{ partial "ay/footer.html" . }}
+</body>
+</html>

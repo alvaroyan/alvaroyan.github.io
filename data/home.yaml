@@ -1,0 +1,72 @@
+research_themes:
+  - number: "01"
+    title: Complexity-constrained quantum information
+    text: The study of quantum information when physically accessible operations are restricted to efficient state preparations, measurements, and transformations.
+  - number: "02"
+    title: Quantum cryptography
+    text: The study of quantum cryptographic protocols built on computational assumptions, encompassing both near-term applications and fundamental questions.
+
+talks:
+  - date: 17 May 2024
+    kind: Invited seminar
+    venue: QuSoft/CWI · Amsterdam
+    title: A Practical Protocol for Quantum Oblivious Transfer from One-Way Functions
+  - date: 6–8 May 2025
+    kind: Invited talk
+    venue: Higgs Centre for Theoretical Physics · Edinburgh
+    title: Quantum Pseudoresources Imply Cryptography
+  - date: 7 Nov 2025
+    kind: Invited seminar
+    venue: University of Cambridge
+    title: "Efficient Quantum Measurements: Computational Max- and Measured Rényi Divergences and Applications"
+  - date: 16–21 Mar 2026
+    kind: Conference talk
+    venue: International Conference on Quantum Cryptography and Security (ICQCS)
+    title: A Practical Protocol for Quantum Oblivious Transfer from One-Way Functions
+
+education:
+  - dates: 2023–2026
+    degree: PhD in Quantum Information Theory
+    institution: Sorbonne Université · Paris
+    detail: Marie Skłodowska-Curie Doctoral Network “Quantum Safe Internet”.
+  - dates: 2021–2023
+    degree: M.Sc. in Quantum Science and Technology
+    institution: Technical University of Munich and LMU Munich
+    detail: "Thesis: Quantum tomography enabled by homogeneous Markovian evolutions · supervised by Michael M. Wolf."
+  - dates: 2017–2022
+    degree: Degree in Physics
+    institution: Universidad Complutense de Madrid
+
+experience:
+  - dates: Apr 2022–Sep 2023
+    role: Research collaborator
+    institution: Technical University of Munich
+    detail: Theoretical research in quantum communication and remote state preparation with Holger Boche.
+
+service:
+  - label: Supervision
+    title: Bachelor research projects
+    text: Supervised Léna Husse, Johanna Theophilos, and Matéo Boury on quantum oblivious transfer in the Quantum Random Oracle Model (Jan–Jun 2026).
+  - label: Academic service
+    title: Reviewing
+    groups:
+      - title: Journals
+        items:
+          - Physical Review Letters
+          - Physical Review A
+          - npj Quantum Information
+      - title: Conferences
+        items:
+          - TQC 2026
+          - QIP 2025
+          - STOC 2025
+  - label: Conference organization
+    title: ICQCS
+    text: Organizing committee for the International Conference on Quantum Cryptography and Security.
+    url: https://icqcs.sciencesconf.org/
+  - label: Program committee
+    title: QSI Workshop 2025
+    text: Program committee member.
+  - label: Community
+    title: Quantum information seminars
+    text: Co-organized the weekly LIP6 quantum information seminar with Matilde Baroni (Jun 2024–Jun 2025).

@@ -1,0 +1,27 @@
+{{- $paper := . -}}
+<article class="paper-row">
+  <div class="paper-meta">
+    <span class="paper-year">{{ $paper.Date.Format "2006" }}</span>
+    <span>{{ $paper.Params.venue_short | default $paper.Params.status | default "Preprint" }}</span>
+  </div>
+  <div class="paper-main">
+    <h3><a href="{{ $paper.RelPermalink }}">{{ $paper.Title }}</a></h3>
+    <p class="paper-authors">
+      {{- range $index, $author := $paper.Params.authors -}}
+        {{- if $index }}, {{ end -}}
+        {{- if eq $author "admin" -}}<strong>Álvaro Yángüez</strong>{{- else -}}{{ $author }}{{- end -}}
+      {{- end -}}
+    </p>
+    <div class="link-row" aria-label="Links for {{ $paper.Title }}">
+      <a href="{{ $paper.RelPermalink }}">Paper page <span aria-hidden="true">→</span></a>
+      {{ with $paper.Params.url_arxiv }}<a href="{{ . }}" target="_blank" rel="noopener">arXiv <span aria-hidden="true">↗</span></a>{{ end }}
+      {{ with $paper.Params.url_pdf }}<a href="{{ . }}" target="_blank" rel="noopener">PDF <span aria-hidden="true">↗</span></a>{{ end }}
+      {{ with $paper.Params.url_journal }}
+        <a href="{{ . }}" target="_blank" rel="noopener">Published version <span aria-hidden="true">↗</span></a>
+      {{ else }}
+        {{ if eq $paper.Params.status "Published" }}{{ with $paper.Params.doi }}<a href="https://doi.org/{{ . }}" target="_blank" rel="noopener">Published version <span aria-hidden="true">↗</span></a>{{ end }}{{ end }}
+      {{ end }}
+      {{ with $paper.Resources.GetMatch "cite.bib" }}<a href="{{ .RelPermalink }}" download>Citation ↓</a>{{ end }}
+    </div>
+  </div>
+</article>

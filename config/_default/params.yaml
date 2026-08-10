@@ -1,21 +1,17 @@
-# SITE SETUP
-# Guide: https://docs.hugoblox.com/tutorial/
-# Documentation: https://docs.hugoblox.com/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
-
-# Appearance
+# Appearance for the remaining Hugo Blox-generated utility pages.
+# The custom homepage and publication layouts use the cover-derived palette in
+# assets/css/custom.css.
 appearance:
-  mode: system
-  color: emerald
+  mode: light
+  color: red
 
-# SEO
 marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: ''
-    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
-    twitter: 'GetResearchDev'
+    org_name: LIP6, Sorbonne Université
+    description: 'Álvaro Yángüez studies the physical and operational consequences of computational complexity in quantum information and quantum cryptography.'
+    twitter: alvaroyanguez16
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -23,38 +19,31 @@ marketing:
     fathom: ''
     pirsch: ''
   verification:
-    google: ''
+    google: c46cd77246c1add3
     baidu: ''
 
-# Site header
 header:
   navbar:
     enable: true
-    blox: "navbar"
+    blox: navbar
     fixed_to_top: true
-    show_search: true
-    show_theme_chooser: true
+    show_search: false
+    show_theme_chooser: false
     logo:
-      text: "Álvaro Yángüez"
+      text: Álvaro Yángüez
 
-# Site footer
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Álvaro Yángüez'
     license:
-      enable: true
-      allow_derivatives: false
-      share_alike: true
-      allow_commercial: false
+      enable: false
 
-# Localization
 locale:
-  date_format: 'Jan 2, 2006'
-  time_format: '3:04 PM'
+  date_format: '2 Jan 2006'
+  time_format: '15:04'
 
-# Site features
 features:
   math:
-    enable: false
+    enable: true
   privacy_pack:
     enable: false

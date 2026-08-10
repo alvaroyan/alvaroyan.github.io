@@ -1,35 +1,12 @@
 ---
-title: 'Experience'
-date: 2023-10-24
-type: landing
-
-design:
-  spacing: '5rem'
-
-# Note: `username` refers to the user's folder name in `content/authors/`
-
-# Page sections
-sections:
-  - block: resume-experience
-    content:
-      username: admin
-    design:
-      # Hugo date format
-      date_format: 'January 2006'
-      # Education or Experience section first?
-      is_education_first: false
-  - block: resume-skills
-    content:
-      title: Skills & Hobbies
-      username: admin
-    design:
-      show_skill_percentage: false
-  - block: resume-awards
-    content:
-      title: Awards
-      username: admin
-  - block: resume-languages
-    content:
-      title: Languages
-      username: admin
+title: Contact
+summary: Contact Álvaro Yángüez about quantum information research, seminars, or collaboration.
+date: 2026-08-10
+layout: academic-page
 ---
+
+For research conversations, seminars, or collaboration, email [alvaro.yanguez@lip6.fr](mailto:alvaro.yanguez@lip6.fr).
+
+- [Google Scholar](https://scholar.google.com/citations?user=SO0XmuEAAAAJ)
+- [ORCID](https://orcid.org/0009-0004-7713-6560)
+- [LinkedIn](https://www.linkedin.com/in/alvaro-y-588b3512a)

@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="{{ site.Language.LanguageCode | default "en" }}">
+<head>
+  {{ partial "ay/head.html" . }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Álvaro Yángüez",
+    "url": "{{ .Permalink }}",
+    "jobTitle": "PhD candidate in Quantum Information Theory",
+    "affiliation": {"@type": "Organization", "name": "Sorbonne Université"},
+    "sameAs": [
+      "https://scholar.google.com/citations?user=SO0XmuEAAAAJ",
+      "https://orcid.org/0009-0004-7713-6560",
+      "https://www.linkedin.com/in/alvaro-y-588b3512a"
+    ]
+  }
+  </script>
+</head>
+<body class="academic-site">
+  {{ partial "ay/nav.html" . }}
+  <main id="main">
+    <section class="hero" id="about" aria-labelledby="hero-title">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">Quantum information theory · Paris</p>
+          <h1 id="hero-title"><span>ÁLVARO</span> <span>YÁNGÜEZ</span></h1>
+          <p class="hero-body">I am a PhD candidate at LIP6, Sorbonne Université, and a member of the Marie Skłodowska-Curie Doctoral Network <a href="https://quantum-safeinternet.com/" target="_blank" rel="noopener">Quantum Safe Internet</a>. My research examines how computational complexity constrains the efficient preparation of quantum states and the implementation of measurements and transformations. From this perspective, I investigate operational measures of distinguishability and correlations, quantum resources hidden from efficient observers, and their cryptographic consequences.</p>
+          <ul class="topic-list" aria-label="Research areas">
+            <li>Computational quantum information</li>
+            <li>Quantum cryptography</li>
+            <li>Quantum complexity</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="button button-primary" href="mailto:alvaro.yanguez@lip6.fr">Email me <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="portrait-column">
+          <div class="portrait-frame">
+            {{- $author := site.GetPage "/authors/admin" -}}
+            {{- $avatar := $author.Resources.GetMatch "avatar.gif" -}}
+            {{- $still := $author.Resources.GetMatch "hey.jpg" -}}
+            {{- if $avatar -}}
+              {{- $animated := $avatar.Resize "340x gif" -}}
+              {{- $staticURL := "" -}}
+              {{- with $still -}}{{- $staticURL = (.Resize "340x jpg q82").RelPermalink -}}{{- end -}}
+              <img class="portrait" src="{{ $animated.RelPermalink }}" width="{{ $animated.Width }}" height="{{ $animated.Height }}" alt="Portrait of Álvaro Yángüez" fetchpriority="high" decoding="async"{{ with $staticURL }} data-static-src="{{ . }}"{{ end }}>
+            {{- end -}}
+          </div>
+          <div class="portrait-links" aria-label="Álvaro Yángüez online profiles">
+            {{- range $profile := $author.Params.profiles -}}
+              {{- $scheme := (urls.Parse $profile.url).Scheme -}}
+              <a href="{{ $profile.url | safeURL }}" aria-label="{{ $profile.label | default ($profile.icon | title) }}" title="{{ $profile.label | default ($profile.icon | title) }}"{{ if in (slice "http" "https") $scheme }} target="_blank" rel="me noopener noreferrer"{{ end }}>
+                {{- partial "functions/get_icon" (dict "name" $profile.icon "attributes" "aria-hidden=\"true\"") -}}
+              </a>
+            {{- end -}}
+          </div>
+          <p class="portrait-caption"><span>Based at</span> LIP6 · Sorbonne Université</p>
+        </div>
+      </div>
+    </section>
+
+    {{- with site.Data.home.research_themes }}
+    <section class="band band-navy" id="research" aria-labelledby="research-title">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="kicker">Research</p>
+          <h2 id="research-title">Research directions</h2>
+          <p>My research concerns the physical and operational consequences of computational complexity in quantum systems. In particular, I study how restrictions on preparation, measurement, and transformation change which properties can be observed, which states can be distinguished, and which resources can be extracted or used.</p>
+        </div>
+        <div class="theme-grid">
+          {{ range . }}
+          <article class="theme-card">
+            <span class="card-number">{{ .number }}</span>
+            <h3>{{ .title }}</h3>
+            <p>{{ .text }}</p>
+          </article>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+    {{- end }}
+
+    {{- $papers := where site.RegularPages "Section" "publication" -}}
+    {{- with $papers }}
+    <section class="band" id="papers" aria-labelledby="papers-title">
+      <div class="shell">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="kicker">Publications &amp; preprints</p>
+            <h2 id="papers-title">Papers</h2>
+          </div>
+          <a class="button button-secondary" href="https://scholar.google.com/citations?user=SO0XmuEAAAAJ" target="_blank" rel="noopener">Google Scholar <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="paper-list">
+          {{- range .ByDate.Reverse -}}
+            {{ partial "ay/paper-row.html" . }}
+          {{- end -}}
+        </div>
+      </div>
+    </section>
+    {{- end }}
+
+    {{- with site.Data.home.talks }}
+    <section class="band band-muted" id="talks" aria-labelledby="talks-title">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="kicker">Selected talks</p>
+          <h2 id="talks-title">Talks</h2>
+        </div>
+        <div class="talk-list">
+          {{ range . }}
+          <article class="talk-row">
+            <div class="talk-date"><time>{{ .date }}</time><span>{{ .kind }}</span></div>
+            <div><p class="talk-venue">{{ .venue }}</p><h3>{{ .title }}</h3>{{ with .detail }}<p class="talk-detail">{{ . }}</p>{{ end }}</div>
+          </article>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+    {{- end }}
+
+    {{- $education := site.Data.home.education -}}
+    {{- $experience := site.Data.home.experience -}}
+    {{- if or $education $experience }}
+    <section class="band band-red" id="cv" aria-labelledby="cv-title">
+      <div class="shell">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="kicker">Curriculum vitae</p>
+            <h2 id="cv-title">{{ if and $education $experience }}Experience &amp; education{{ else if $education }}Education{{ else }}Research experience{{ end }}</h2>
+          </div>
+          <a class="button button-light" href="{{ "uploads/resume.pdf" | relURL }}">Full CV <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="cv-columns">
+          {{- with $education }}
+          <div>
+            <h3 class="subheading">Education</h3>
+            <div class="timeline">
+              {{ range . }}
+              <article class="timeline-row"><p class="timeline-date">{{ .dates }}</p><div><h4>{{ .degree }}</h4><p class="timeline-place">{{ .institution }}</p>{{ with .detail }}<p>{{ . }}</p>{{ end }}</div></article>
+              {{ end }}
+            </div>
+          </div>
+          {{- end }}
+          {{- with $experience }}
+          <div>
+            <h3 class="subheading">Research experience</h3>
+            <div class="timeline">
+              {{ range . }}
+              <article class="timeline-row"><p class="timeline-date">{{ .dates }}</p><div><h4>{{ .role }}</h4><p class="timeline-place">{{ .institution }}</p><p>{{ .detail }}</p></div></article>
+              {{ end }}
+            </div>
+          </div>
+          {{- end }}
+        </div>
+      </div>
+    </section>
+    {{- end }}
+
+    {{- with site.Data.home.service }}
+    <section class="band" id="service" aria-labelledby="service-title">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="kicker">Academic life</p>
+          <h2 id="service-title">Service &amp; supervision</h2>
+        </div>
+        <div class="service-grid">
+          {{ range . }}
+          <article class="service-card">
+            <p class="card-label">{{ .label }}</p>
+            <h3>{{ .title }}</h3>
+            {{ with .text }}<p>{{ . }}</p>{{ end }}
+            {{ with .groups }}
+            <div class="service-groups">
+              {{ range . }}
+              <section class="service-group" aria-label="{{ .title }} reviewed">
+                <h4>{{ .title }}</h4>
+                <ul>{{ range .items }}<li>{{ . }}</li>{{ end }}</ul>
+              </section>
+              {{ end }}
+            </div>
+            {{ end }}
+            {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">Visit website <span aria-hidden="true">↗</span></a>{{ end }}
+          </article>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+    {{- end }}
+
+    <section class="contact-band" id="contact" aria-labelledby="contact-title">
+      <div class="shell contact-grid">
+        <div><p class="kicker">Contact</p><h2 id="contact-title">Let’s discuss quantum information.</h2></div>
+        <div class="contact-copy">
+          <p>For research conversations, seminars, or collaboration, the best way to reach me is by email.</p>
+          <a class="email-link" href="mailto:alvaro.yanguez@lip6.fr">alvaro.yanguez@lip6.fr <span aria-hidden="true">↗</span></a>
+          <div class="social-links">
+            <a href="https://orcid.org/0009-0004-7713-6560" target="_blank" rel="me noopener">ORCID</a>
+            <a href="https://www.linkedin.com/in/alvaro-y-588b3512a" target="_blank" rel="me noopener">LinkedIn</a>
+            <a href="https://x.com/alvaroyanguez16" target="_blank" rel="me noopener">X</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  {{ partial "ay/footer.html" . }}
+  <script>
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const portrait = document.querySelector('.portrait[data-static-src]');
+      if (portrait) portrait.src = portrait.dataset.staticSrc;
+    }
+  </script>
+</body>
+</html>

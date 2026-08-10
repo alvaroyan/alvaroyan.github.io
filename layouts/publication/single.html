@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="{{ site.Language.LanguageCode | default "en" }}">
+<head>
+  {{ partial "ay/head.html" . }}
+</head>
+<body class="academic-site paper-page">
+  {{ partial "ay/nav.html" . }}
+  <main id="main">
+    <header class="paper-hero">
+      <div class="shell paper-hero-grid">
+        <div class="paper-page-meta">
+          <p class="paper-year">{{ .Date.Format "2006" }}</p>
+          <p>{{ .Params.status | default "Publication" }}</p>
+          <p>{{ .Params.venue_short | default .Params.publication_short }}</p>
+        </div>
+        <div>
+          <p class="kicker">Research paper</p>
+          <h1>{{ .Title }}</h1>
+          <p class="paper-authors">
+            {{- range $index, $author := .Params.authors -}}
+              {{- if $index }}, {{ end -}}
+              {{- if eq $author "admin" -}}<strong>Álvaro Yángüez</strong>{{- else -}}{{ $author }}{{- end -}}
+            {{- end -}}
+          </p>
+          <div class="link-row" aria-label="Paper links">
+            {{ with .Params.url_arxiv }}<a href="{{ . }}" target="_blank" rel="noopener">arXiv <span aria-hidden="true">↗</span></a>{{ end }}
+            {{ with .Params.url_pdf }}<a href="{{ . }}" target="_blank" rel="noopener">PDF <span aria-hidden="true">↗</span></a>{{ end }}
+            {{ with .Params.url_journal }}
+              <a href="{{ . }}" target="_blank" rel="noopener">Published version <span aria-hidden="true">↗</span></a>
+            {{ else }}
+              {{ if eq $.Params.status "Published" }}{{ with $.Params.doi }}<a href="https://doi.org/{{ . }}" target="_blank" rel="noopener">Published version <span aria-hidden="true">↗</span></a>{{ end }}{{ end }}
+            {{ end }}
+            {{ with .Resources.GetMatch "cite.bib" }}<a href="{{ .RelPermalink }}" download>BibTeX ↓</a>{{ end }}
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="shell paper-content">
+      <aside class="paper-sidebar" aria-label="Publication details">
+        <dl>
+          <div><dt>Status</dt><dd>{{ .Params.status | default "Publication" }}</dd></div>
+          <div><dt>{{ if eq .Params.status "Preprint" }}Submitted{{ else }}Published{{ end }}</dt><dd>{{ .Date.Format "2 January 2006" }}</dd></div>
+          {{ with .Params.publication }}<div><dt>Venue</dt><dd>{{ . | markdownify }}</dd></div>{{ end }}
+          {{ with .Params.doi }}<div><dt>DOI</dt><dd><a href="https://doi.org/{{ . }}">{{ . }}</a></dd></div>{{ end }}
+          {{ with .Params.arxiv }}<div><dt>arXiv</dt><dd><a href="https://arxiv.org/abs/{{ . }}">{{ . }}</a></dd></div>{{ end }}
+        </dl>
+      </aside>
+      <article class="prose">
+        {{ with .Params.abstract }}
+        <section class="abstract-box" aria-labelledby="abstract-title">
+          <h2 id="abstract-title">Abstract</h2>
+          <p>{{ . }}</p>
+        </section>
+        {{ end }}
+        {{ .Content }}
+        {{ with .Resources.GetMatch "cite.bib" }}
+        <section aria-labelledby="bibtex-title">
+          <h2 id="bibtex-title">BibTeX</h2>
+          <pre class="citation-block"><code>{{ .Content }}</code></pre>
+        </section>
+        {{ end }}
+      </article>
+    </div>
+    <section class="contact-band compact-contact">
+      <div class="shell contact-grid">
+        <div><p class="kicker">More research</p><h2>Explore all papers.</h2></div>
+        <div class="contact-copy"><p>Return to the publication list or continue to the full academic profile.</p><div class="hero-actions"><a class="button button-light" href="{{ "/#papers" | relLangURL }}">All papers <span aria-hidden="true">→</span></a><a class="button button-light" href="{{ "uploads/resume.pdf" | relURL }}">CV <span aria-hidden="true">↓</span></a></div></div>
+      </div>
+    </section>
+  </main>
+  {{ partial "ay/footer.html" . }}
+</body>
+</html>

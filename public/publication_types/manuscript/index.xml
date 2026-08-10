@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Manuscript | Álvaro Yángüez</title><link>https://alvaroyan.github.io/publication_types/manuscript/</link><atom:link href="https://alvaroyan.github.io/publication_types/manuscript/index.xml" rel="self" type="application/rss+xml"/><description>Manuscript</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate><image><url>https://alvaroyan.github.io/media/icon_hu_51e89bacffce98e8.png</url><title>Manuscript</title><link>https://alvaroyan.github.io/publication_types/manuscript/</link></image><item><title>Accessible Quantum Correlations Under Complexity Constraints</title><link>https://alvaroyan.github.io/publication/preprint/accessible-quantum-correlations/</link><pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate><guid>https://alvaroyan.github.io/publication/preprint/accessible-quantum-correlations/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>This preprint studies bipartite quantum states through efficiently implementable quantum channels, leading to computational versions of max-divergence and conditional min-entropy.&lt;/p>
+&lt;h2 id="publication-details">Publication details&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Status:&lt;/strong> Preprint&lt;/li>
+&lt;li>&lt;strong>Submitted:&lt;/strong> 16 April 2026&lt;/li>
+&lt;li>&lt;strong>Identifier:&lt;/strong> arXiv:2604.15540 [quant-ph]&lt;/li>
+&lt;li>&lt;strong>Subjects:&lt;/strong> Quantum Physics; Computational Complexity; Information Theory&lt;/li>
+&lt;/ul>
+&lt;h2 id="citation">Citation&lt;/h2>
+&lt;p>Álvaro Yángüez, Noam Avidan, Jan Kochanowski, and Thomas A. Hahn, “Accessible Quantum Correlations Under Complexity Constraints,” arXiv:2604.15540 (2026). &lt;a href="cite.bib">Download the BibTeX entry&lt;/a>.&lt;/p></description></item></channel></rss>

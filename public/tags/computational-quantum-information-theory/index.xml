@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Computational Quantum Information Theory | Álvaro Yángüez</title><link>https://alvaroyan.github.io/tags/computational-quantum-information-theory/</link><atom:link href="https://alvaroyan.github.io/tags/computational-quantum-information-theory/index.xml" rel="self" type="application/rss+xml"/><description>Computational Quantum Information Theory</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate><image><url>https://alvaroyan.github.io/media/icon_hu_51e89bacffce98e8.png</url><title>Computational Quantum Information Theory</title><link>https://alvaroyan.github.io/tags/computational-quantum-information-theory/</link></image><item><title>Efficient Quantum Measurements: Computational Max- and Measured Rényi Divergences and Applications</title><link>https://alvaroyan.github.io/publication/preprint/efficient-quantum-measurements/</link><pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate><guid>https://alvaroyan.github.io/publication/preprint/efficient-quantum-measurements/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>This article introduces computational max-divergence and computational measured Rényi divergences constrained by efficient binary measurements, and develops applications to hypothesis testing and quantum resource quantification.&lt;/p>
+&lt;h2 id="publication-details">Publication details&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Journal:&lt;/strong> &lt;em>IEEE Transactions on Information Theory&lt;/em>&lt;/li>
+&lt;li>&lt;strong>Issue:&lt;/strong> Volume 72, issue 6&lt;/li>
+&lt;li>&lt;strong>Pages:&lt;/strong> 4085–4114&lt;/li>
+&lt;li>&lt;strong>Published:&lt;/strong> June 2026; first published online 2 April 2026&lt;/li>
+&lt;li>&lt;strong>DOI:&lt;/strong> &lt;a href="https://doi.org/10.1109/TIT.2026.3680247" target="_blank" rel="noopener">10.1109/TIT.2026.3680247&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Preprint:&lt;/strong> &lt;a href="https://arxiv.org/abs/2509.21308" target="_blank" rel="noopener">arXiv:2509.21308&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="citation">Citation&lt;/h2>
+&lt;p>Álvaro Yángüez, Thomas A. Hahn, and Jan Kochanowski, “Efficient Quantum Measurements: Computational Max- and Measured Rényi Divergences and Applications,” &lt;em>IEEE Transactions on Information Theory&lt;/em> &lt;strong>72&lt;/strong>(6), 4085–4114 (2026). &lt;a href="cite.bib">Download the BibTeX entry&lt;/a>.&lt;/p></description></item><item><title>Accessible Quantum Correlations Under Complexity Constraints</title><link>https://alvaroyan.github.io/publication/preprint/accessible-quantum-correlations/</link><pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate><guid>https://alvaroyan.github.io/publication/preprint/accessible-quantum-correlations/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>This preprint studies bipartite quantum states through efficiently implementable quantum channels, leading to computational versions of max-divergence and conditional min-entropy.&lt;/p>
+&lt;h2 id="publication-details">Publication details&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Status:&lt;/strong> Preprint&lt;/li>
+&lt;li>&lt;strong>Submitted:&lt;/strong> 16 April 2026&lt;/li>
+&lt;li>&lt;strong>Identifier:&lt;/strong> arXiv:2604.15540 [quant-ph]&lt;/li>
+&lt;li>&lt;strong>Subjects:&lt;/strong> Quantum Physics; Computational Complexity; Information Theory&lt;/li>
+&lt;/ul>
+&lt;h2 id="citation">Citation&lt;/h2>
+&lt;p>Álvaro Yángüez, Noam Avidan, Jan Kochanowski, and Thomas A. Hahn, “Accessible Quantum Correlations Under Complexity Constraints,” arXiv:2604.15540 (2026). &lt;a href="cite.bib">Download the BibTeX entry&lt;/a>.&lt;/p></description></item></channel></rss>

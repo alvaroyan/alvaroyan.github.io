@@ -1,0 +1,22 @@
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="wordmark" href="{{ "/" | relLangURL }}" aria-label="Álvaro Yángüez, home">ÁLVARO YÁNGÜEZ</a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      {{ with site.Data.home.research_themes }}<a href="{{ "/#research" | relLangURL }}">Research</a>{{ end }}
+      {{ with where site.RegularPages "Section" "publication" }}<a href="{{ "/#papers" | relLangURL }}">Papers</a>{{ end }}
+      {{ with site.Data.home.talks }}<a href="{{ "/#talks" | relLangURL }}">Talks</a>{{ end }}
+      {{ if or site.Data.home.education site.Data.home.experience }}<a href="{{ "/#cv" | relLangURL }}">CV</a>{{ end }}
+      {{ with site.Data.home.service }}<a href="{{ "/#service" | relLangURL }}">Service</a>{{ end }}
+      <a href="{{ "/#contact" | relLangURL }}">Contact</a>
+    </nav>
+  </div>
+  <nav class="mobile-nav" aria-label="Mobile section navigation">
+    {{ with site.Data.home.research_themes }}<a href="{{ "/#research" | relLangURL }}">Research</a>{{ end }}
+    {{ with where site.RegularPages "Section" "publication" }}<a href="{{ "/#papers" | relLangURL }}">Papers</a>{{ end }}
+    {{ with site.Data.home.talks }}<a href="{{ "/#talks" | relLangURL }}">Talks</a>{{ end }}
+    {{ if or site.Data.home.education site.Data.home.experience }}<a href="{{ "/#cv" | relLangURL }}">CV</a>{{ end }}
+    {{ with site.Data.home.service }}<a href="{{ "/#service" | relLangURL }}">Service</a>{{ end }}
+    <a href="{{ "/#contact" | relLangURL }}">Contact</a>
+  </nav>
+</header>

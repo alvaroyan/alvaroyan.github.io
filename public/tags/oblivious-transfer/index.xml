@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Oblivious Transfer | Álvaro Yángüez</title><link>https://alvaroyan.github.io/tags/oblivious-transfer/</link><atom:link href="https://alvaroyan.github.io/tags/oblivious-transfer/index.xml" rel="self" type="application/rss+xml"/><description>Oblivious Transfer</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate><image><url>https://alvaroyan.github.io/media/icon_hu_51e89bacffce98e8.png</url><title>Oblivious Transfer</title><link>https://alvaroyan.github.io/tags/oblivious-transfer/</link></image><item><title>A Practical Protocol for Quantum Oblivious Transfer from One-Way Functions</title><link>https://alvaroyan.github.io/publication/preprint/ot/</link><pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate><guid>https://alvaroyan.github.io/publication/preprint/ot/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>This article presents a simulation-secure quantum oblivious-transfer protocol from one-way functions in the plain model, with explicit attention to efficiency, experimental errors, and the required quantum resources.&lt;/p>
+&lt;h2 id="publication-details">Publication details&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Journal:&lt;/strong> &lt;em>Quantum&lt;/em>&lt;/li>
+&lt;li>&lt;strong>Volume and article:&lt;/strong> Volume 10, article 2124&lt;/li>
+&lt;li>&lt;strong>Published:&lt;/strong> 1 June 2026&lt;/li>
+&lt;li>&lt;strong>DOI:&lt;/strong> &lt;a href="https://doi.org/10.22331/q-2026-06-01-2124" target="_blank" rel="noopener">10.22331/q-2026-06-01-2124&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Preprint:&lt;/strong> &lt;a href="https://arxiv.org/abs/2406.09110" target="_blank" rel="noopener">arXiv:2406.09110&lt;/a>, version 4 of 29 May 2026&lt;/li>
+&lt;/ul>
+&lt;h2 id="citation">Citation&lt;/h2>
+&lt;p>Eleni Diamanti, Alex B. Grilo, Adriano Innocenzi, Pascal Lefebvre, Verena Yacoub, and Álvaro Yángüez, “A Practical Protocol for Quantum Oblivious Transfer from One-Way Functions,” &lt;em>Quantum&lt;/em> &lt;strong>10&lt;/strong>, 2124 (2026). &lt;a href="cite.bib">Download the BibTeX entry&lt;/a>.&lt;/p></description></item></channel></rss>

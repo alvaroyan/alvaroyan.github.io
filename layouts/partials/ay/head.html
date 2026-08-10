@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{- $description := .Params.summary | default .Params.description | default site.Params.marketing.seo.description | default "Álvaro Yángüez — quantum information theory, complexity, and quantum cryptography." | plainify -}}
+{{- $pageTitle := site.Title -}}
+{{- if and .Title (not .IsHome) }}{{ $pageTitle = printf "%s · %s" .Title site.Title }}{{ end -}}
+<title>{{ $pageTitle }}</title>
+<meta name="description" content="{{ $description }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+{{- with resources.Get "css/custom.css" -}}
+  {{- $styles := . | minify | fingerprint -}}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+{{- end }}
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:title" content="{{ $pageTitle }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ "images/social-preview.png" | absURL }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $pageTitle }}">
+<meta name="twitter:description" content="{{ $description }}">
+<meta name="twitter:image" content="{{ "images/social-preview.png" | absURL }}">
+<meta name="theme-color" content="#f6f0df">
+<link rel="alternate" type="application/rss+xml" href="{{ "index.xml" | absURL }}" title="{{ site.Title }}">

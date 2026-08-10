@@ -1,41 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Quantum Resource Theory | Álvaro Yángüez</title>
-    <link>http://localhost:1313/tags/quantum-resource-theory/</link>
-      <atom:link href="http://localhost:1313/tags/quantum-resource-theory/index.xml" rel="self" type="application/rss+xml" />
-    <description>Quantum Resource Theory</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 25 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>http://localhost:1313/media/icon_hu_51e89bacffce98e8.png</url>
-      <title>Quantum Resource Theory</title>
-      <link>http://localhost:1313/tags/quantum-resource-theory/</link>
-    </image>
-    
-    <item>
-      <title>Efficient Quantum Measurements: Computational Max- and Measured Rényi Divergences and Applications</title>
-      <link>http://localhost:1313/publication/preprint/efficient-quantum-measurements/</link>
-      <pubDate>Thu, 25 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/preprint/efficient-quantum-measurements/</guid>
-      <description>&lt;!-- This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs. --&gt;
-&lt;!-- 
-
-
-
-
-  
-    
-  
-
-&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
-&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-&lt;/span&gt;
-  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.&lt;/span&gt;
-&lt;/div&gt; --&gt;
-&lt;!-- Add the publication&#39;s **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). --&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Quantum Resource Theory | Álvaro Yángüez</title><link>https://alvaroyan.github.io/tags/quantum-resource-theory/</link><atom:link href="https://alvaroyan.github.io/tags/quantum-resource-theory/index.xml" rel="self" type="application/rss+xml"/><description>Quantum Resource Theory</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate><image><url>https://alvaroyan.github.io/media/icon_hu_51e89bacffce98e8.png</url><title>Quantum Resource Theory</title><link>https://alvaroyan.github.io/tags/quantum-resource-theory/</link></image><item><title>Efficient Quantum Measurements: Computational Max- and Measured Rényi Divergences and Applications</title><link>https://alvaroyan.github.io/publication/preprint/efficient-quantum-measurements/</link><pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate><guid>https://alvaroyan.github.io/publication/preprint/efficient-quantum-measurements/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>This article introduces computational max-divergence and computational measured Rényi divergences constrained by efficient binary measurements, and develops applications to hypothesis testing and quantum resource quantification.&lt;/p>
+&lt;h2 id="publication-details">Publication details&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Journal:&lt;/strong> &lt;em>IEEE Transactions on Information Theory&lt;/em>&lt;/li>
+&lt;li>&lt;strong>Issue:&lt;/strong> Volume 72, issue 6&lt;/li>
+&lt;li>&lt;strong>Pages:&lt;/strong> 4085–4114&lt;/li>
+&lt;li>&lt;strong>Published:&lt;/strong> June 2026; first published online 2 April 2026&lt;/li>
+&lt;li>&lt;strong>DOI:&lt;/strong> &lt;a href="https://doi.org/10.1109/TIT.2026.3680247" target="_blank" rel="noopener">10.1109/TIT.2026.3680247&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Preprint:&lt;/strong> &lt;a href="https://arxiv.org/abs/2509.21308" target="_blank" rel="noopener">arXiv:2509.21308&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="citation">Citation&lt;/h2>
+&lt;p>Álvaro Yángüez, Thomas A. Hahn, and Jan Kochanowski, “Efficient Quantum Measurements: Computational Max- and Measured Rényi Divergences and Applications,” &lt;em>IEEE Transactions on Information Theory&lt;/em> &lt;strong>72&lt;/strong>(6), 4085–4114 (2026). &lt;a href="cite.bib">Download the BibTeX entry&lt;/a>.&lt;/p></description></item><item><title>Quantum pseudoresources imply cryptography</title><link>https://alvaroyan.github.io/publication/preprint/pseudoresources/</link><pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate><guid>https://alvaroyan.github.io/publication/preprint/pseudoresources/</guid><description>&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>This article shows that quantum pseudoresources imply EPFI pairs and that EPFI pairs are equivalent to quantum commitments and therefore to EFI pairs, with a detailed treatment of pseudoentanglement.&lt;/p>
+&lt;h2 id="publication-details">Publication details&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Journal:&lt;/strong> &lt;em>IACR Communications in Cryptology&lt;/em>&lt;/li>
+&lt;li>&lt;strong>Issue:&lt;/strong> Volume 2, issue 4&lt;/li>
+&lt;li>&lt;strong>Length:&lt;/strong> 24 pages&lt;/li>
+&lt;li>&lt;strong>Published:&lt;/strong> 8 January 2026&lt;/li>
+&lt;li>&lt;strong>DOI:&lt;/strong> &lt;a href="https://doi.org/10.62056/ahbngyl7s" target="_blank" rel="noopener">10.62056/ahbngyl7s&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Preprints:&lt;/strong> &lt;a href="https://arxiv.org/abs/2504.15025" target="_blank" rel="noopener">arXiv:2504.15025&lt;/a>; &lt;a href="https://eprint.iacr.org/2025/732" target="_blank" rel="noopener">IACR ePrint 2025/732&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="citation">Citation&lt;/h2>
+&lt;p>Alex B. Grilo and Álvaro Yángüez, “Quantum pseudoresources imply cryptography,” &lt;em>IACR Communications in Cryptology&lt;/em> &lt;strong>2&lt;/strong>(4) (2026). &lt;a href="cite.bib">Download the BibTeX entry&lt;/a>.&lt;/p></description></item></channel></rss>
