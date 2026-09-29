@@ -8,8 +8,8 @@
     "@type": "Person",
     "name": "Álvaro Yángüez",
     "url": "{{ .Permalink }}",
-    "jobTitle": "PhD candidate in Quantum Information Theory",
-    "affiliation": {"@type": "Organization", "name": "Sorbonne Université"},
+    "jobTitle": "Postdoctoral Researcher in Quantum Information Theory",
+    "affiliation": {"@type": "Organization", "name": "Chair of Quantum Information Theory, LMU Munich", "url": "https://www.physik.lmu.de/qit/en/"},
     "sameAs": [
       "https://scholar.google.com/citations?user=SO0XmuEAAAAJ",
       "https://orcid.org/0009-0004-7713-6560",
@@ -24,16 +24,16 @@
     <section class="hero" id="about" aria-labelledby="hero-title">
       <div class="shell hero-grid">
         <div class="hero-copy">
-          <p class="kicker">Quantum information theory · Paris</p>
+          <p class="kicker">Quantum information theory · Munich</p>
           <h1 id="hero-title"><span>ÁLVARO</span> <span>YÁNGÜEZ</span></h1>
-          <p class="hero-body">I am a PhD candidate at LIP6, Sorbonne Université, and a member of the Marie Skłodowska-Curie Doctoral Network <a href="https://quantum-safeinternet.com/" target="_blank" rel="noopener">Quantum Safe Internet</a>. My research examines how computational complexity constrains the efficient preparation of quantum states and the implementation of measurements and transformations. From this perspective, I investigate operational measures of distinguishability and correlations, quantum resources hidden from efficient observers, and their cryptographic consequences.</p>
+          <p class="hero-body">I am a postdoctoral researcher at the <a href="https://www.physik.lmu.de/qit/en/" target="_blank" rel="noopener">Chair of Quantum Information Theory at LMU Munich</a>. Previously, I was a PhD student in quantum information theory at <a href="https://qi.lip6.fr/" target="_blank" rel="noopener">LIP6, Sorbonne Université</a>, as part of the Marie Skłodowska-Curie Doctoral Network <a href="https://quantum-safeinternet.com/" target="_blank" rel="noopener">Quantum Safe Internet</a>. My research examines how computational complexity constrains the efficient preparation of quantum states and the implementation of measurements and transformations. From this perspective, I investigate operational measures of distinguishability and correlations, quantum resources hidden from efficient observers, and their cryptographic consequences.</p>
           <ul class="topic-list" aria-label="Research areas">
             <li>Computational quantum information</li>
             <li>Quantum cryptography</li>
             <li>Quantum complexity</li>
           </ul>
           <div class="hero-actions">
-            <a class="button button-primary" href="mailto:alvaro.yanguez@lip6.fr">Email me <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="mailto:alvaro.yanguez@lmu.de">Email me <span aria-hidden="true">↗</span></a>
           </div>
         </div>
         <div class="portrait-column">
@@ -56,7 +56,7 @@
               </a>
             {{- end -}}
           </div>
-          <p class="portrait-caption"><span>Based at</span> LIP6 · Sorbonne Université</p>
+          <p class="portrait-caption"><span>Based at</span> LMU Munich</p>
         </div>
       </div>
     </section>
@@ -134,22 +134,22 @@
           <a class="button button-light" href="{{ "uploads/resume.pdf" | relURL }}">Full CV <span aria-hidden="true">↓</span></a>
         </div>
         <div class="cv-columns">
+          {{- with $experience }}
+          <div>
+            <h3 class="subheading">Research experience</h3>
+            <div class="timeline">
+              {{ range . }}
+              <article class="timeline-row"><p class="timeline-date">{{ .dates }}</p><div><h4>{{ .role }}</h4><p class="timeline-place">{{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}{{ .institution }}{{ if .url }}</a>{{ end }}</p>{{ with .detail }}<p>{{ . }}</p>{{ end }}</div></article>
+              {{ end }}
+            </div>
+          </div>
+          {{- end }}
           {{- with $education }}
           <div>
             <h3 class="subheading">Education</h3>
             <div class="timeline">
               {{ range . }}
               <article class="timeline-row"><p class="timeline-date">{{ .dates }}</p><div><h4>{{ .degree }}</h4><p class="timeline-place">{{ .institution }}</p>{{ with .detail }}<p>{{ . }}</p>{{ end }}</div></article>
-              {{ end }}
-            </div>
-          </div>
-          {{- end }}
-          {{- with $experience }}
-          <div>
-            <h3 class="subheading">Research experience</h3>
-            <div class="timeline">
-              {{ range . }}
-              <article class="timeline-row"><p class="timeline-date">{{ .dates }}</p><div><h4>{{ .role }}</h4><p class="timeline-place">{{ .institution }}</p><p>{{ .detail }}</p></div></article>
               {{ end }}
             </div>
           </div>
@@ -195,7 +195,7 @@
         <div><p class="kicker">Contact</p><h2 id="contact-title">Let’s discuss quantum information.</h2></div>
         <div class="contact-copy">
           <p>For research conversations, seminars, or collaboration, the best way to reach me is by email.</p>
-          <a class="email-link" href="mailto:alvaro.yanguez@lip6.fr">alvaro.yanguez@lip6.fr <span aria-hidden="true">↗</span></a>
+          <a class="email-link" href="mailto:alvaro.yanguez@lmu.de">alvaro.yanguez@lmu.de <span aria-hidden="true">↗</span></a>
           <div class="social-links">
             <a href="https://orcid.org/0009-0004-7713-6560" target="_blank" rel="me noopener">ORCID</a>
             <a href="https://www.linkedin.com/in/alvaro-y-588b3512a" target="_blank" rel="me noopener">LinkedIn</a>

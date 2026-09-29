@@ -4,7 +4,7 @@ first_name: Álvaro
 last_name: Yángüez
 superuser: true
 highlight_name: true
-role: PhD candidate in Quantum Information Theory
+role: Postdoctoral Researcher in Quantum Information Theory
 
 _build:
   render: never
@@ -12,14 +12,12 @@ _build:
   publishResources: false
 
 organizations:
-  - name: LIP6, Sorbonne Université
-    url: https://qi.lip6.fr/
-  - name: Quantum Safe Internet
-    url: https://quantum-safeinternet.com/
+  - name: LMU Munich, Chair of Quantum Information Theory
+    url: https://www.physik.lmu.de/qit/en/
 
 profiles:
   - icon: at-symbol
-    url: mailto:alvaro.yanguez@lip6.fr
+    url: mailto:alvaro.yanguez@lmu.de
     label: Email Álvaro Yángüez
   - icon: brands/x
     url: https://x.com/alvaroyanguez16
@@ -57,6 +55,11 @@ education:
     date_end: 2022-02-08
 
 work:
+  - position: Postdoctoral researcher
+    company_name: LMU Munich, Chair of Quantum Information Theory
+    company_url: https://www.physik.lmu.de/qit/en/
+    date_start: 2026-10-01
+    summary: Research in quantum information theory, computational complexity, and quantum cryptography.
   - position: Research collaborator
     company_name: Technical University of Munich
     company_url: https://www.tum.de/
@@ -68,6 +71,6 @@ work:
 
 ## About
 
-I am a PhD candidate in quantum information theory at [LIP6](https://qi.lip6.fr/), Sorbonne Université, and a member of the Marie Skłodowska-Curie Doctoral Network [Quantum Safe Internet](https://quantum-safeinternet.com/).
+I am a postdoctoral researcher at the [Chair of Quantum Information Theory at LMU Munich](https://www.physik.lmu.de/qit/en/). Previously, I was a PhD student in quantum information theory at [LIP6, Sorbonne Université](https://qi.lip6.fr/), as part of the Marie Skłodowska-Curie Doctoral Network [Quantum Safe Internet](https://quantum-safeinternet.com/).
 
 My research examines how computational complexity constrains the efficient preparation of quantum states and the implementation of measurements and transformations. From this perspective, I investigate operational measures of distinguishability and correlations, quantum resources hidden from efficient observers, and their cryptographic consequences.

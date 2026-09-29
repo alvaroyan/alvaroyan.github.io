@@ -38,6 +38,11 @@ education:
     institution: Universidad Complutense de Madrid
 
 experience:
+  - dates: Oct 2026–Present
+    role: Postdoctoral researcher
+    institution: LMU Munich · Chair of Quantum Information Theory
+    url: https://www.physik.lmu.de/qit/en/
+    detail: Research in quantum information theory, computational complexity, and quantum cryptography.
   - dates: Apr 2022–Sep 2023
     role: Research collaborator
     institution: Technical University of Munich

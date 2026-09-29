@@ -5,7 +5,7 @@ date: 2026-08-10
 layout: academic-page
 ---
 
-For research conversations, seminars, or collaboration, email [alvaro.yanguez@lip6.fr](mailto:alvaro.yanguez@lip6.fr).
+For research conversations, seminars, or collaboration, email [alvaro.yanguez@lmu.de](mailto:alvaro.yanguez@lmu.de).
 
 - [Google Scholar](https://scholar.google.com/citations?user=SO0XmuEAAAAJ)
 - [ORCID](https://orcid.org/0009-0004-7713-6560)
